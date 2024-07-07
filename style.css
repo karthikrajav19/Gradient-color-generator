@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow-color:#ffe14c;
+    --grey-color:#7f7f7f;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background-color: var(--yellow-color);
+}
+
+.aircraft{
+    width:500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 0.5rem;
+}
+
+.aircraft .cockpit{
+    width:100%;
+    height: 200px;
+    background: linear-gradient(to left bottom,#ffafcc,#a2d2ff);
+    border-radius: 0.5rem;
+}
+
+.aircraft .x{
+    display:flex;
+    justify-content:space-between;
+    margin: 15px 0;
+}
+
+.x :where(.y,button){
+    width: calc(100% / 2 - 1px);
+}
+
+.box p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.seats{
+    border: 2px solid var(--grey-color);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.seats select{
+    font-size: 0.9rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.box .box02{
+    margin-left: 100px;
+}
+
+.intake{
+    display: flex;
+}
+
+.box02 input{
+        height: 35px;
+        width: 100%;
+}
+
+.box02 input:last-child{
+    margin-left: 10px;
+}
+
+.aircraft textarea{
+    width: 100%;
+    font-size: 1.2rem;
+    padding:10px 25px;
+    border: 2px solid var(--grey-color);
+    border-radius: 5px;
+    color: var(--grey-color);
+    resize: none;
+}
+
+.bts button{
+    cursor: pointer;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0 0 -20px;
+}
+
+.bts .refresh{
+    background-color: var(--grey-color);
+}
+
+.bts .copy{
+    background-color: var(--yellow-color);
+}
